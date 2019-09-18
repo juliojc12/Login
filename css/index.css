@@ -10,20 +10,10 @@ body {
 }
 
 body {
-  background-image: linear-gradient(to bottom left, #7159c1 75%, white);
+  background-image: linear-gradient(to bottom left, #7159c1 70%, white);
   font-family: Roboto, Arial, sans-serif;
 }
 
-.rocket{
-  position: sticky;
-  width: 80px;
-  height: 80px;
-  left: 420px;
-  top: 550px;
-  z-index: -2;
-
-
-}
 
 section {
   display: flex;
@@ -157,18 +147,18 @@ form.validate-error {
   }
 }
 
-/* squares */
+/* stars */
 body {
   overflow: hidden;
 }
-.squares li {
+.stars li {
 
   width: 40px;
   height: 40px;
   background-color: none;
   display: block;
   position: absolute;
-  bottom: -40px;
+  bottom: -10px;
   animation: up 1s infinite alternate;
   z-index:-1
 }
@@ -182,8 +172,15 @@ body {
     opacity: 1;
   }
   to {
-    transform: translateY(-1200px) rotate(960deg);
+    transform: translateY(-930px) rotate(960deg);
   }
 }
 
-
+/* foguete */
+.rocket {
+  position: sticky;
+  width: 150px;
+  height: 150px;
+  left: 450px;
+  top: 550px;
+}

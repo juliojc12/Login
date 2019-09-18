@@ -35,10 +35,10 @@ form.addEventListener("animationend", event => {
   }
 });
 
-/* background squares */
-const ulSquares = document.querySelector("ul.squares");
+/* background stars */
+const stars = document.querySelector("ul.stars");
 
-for (let i = 0; i < 11; i++) {
+for (let i = 0; i < 41; i++) {
   const li = document.createElement("li");
 
   const star = document.createElement('img');
@@ -51,9 +51,9 @@ for (let i = 0; i < 11; i++) {
 
   const random = (min, max) => Math.random() * (max - min) + min;
 
-  const size = Math.floor(random(10, 120));
+  const size = Math.floor(random(10, 30));
   const position = random(1, 99);
-  const delay = random(5, 0.1);
+  const delay = random(3, 0.1);
   const duration = random(24, 12);
 
 
@@ -71,5 +71,5 @@ for (let i = 0; i < 11; i++) {
   li.style.animationDuration = `${duration}s`;
   li.style.animationTimingFunction = `cubic-bezier(${Math.random()}, ${Math.random()}, ${Math.random()}, ${Math.random()})`;
 
-  ulSquares.appendChild(li);
+  stars.appendChild(li);
 }
